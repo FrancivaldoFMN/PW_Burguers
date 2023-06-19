@@ -6,7 +6,7 @@ const PORT = 3000
 
 app.use(express.json())
 
-// Função auxiliar para ler o arquivo de dados
+// Função auxiliar para ler o arquivo de dados.
 function lerArquivo(callback) {
   fs.readFile('data.json', 'utf8', (err, data) => {
     if (err) {
